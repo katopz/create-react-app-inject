@@ -5,7 +5,7 @@ so we will hack [react-scripts](https://github.com/facebookincubator/create-reac
 # How to use.
 ### Download to your root prject that already init [react-scripts](https://github.com/facebookincubator/create-react-app)
 ```shell
-$ curl -O https://raw.githubusercontent.com/katopz/webpack-mod/master/inject.js
+$ curl -O https://raw.githubusercontent.com/katopz/create-react-app-inject/master/inject.js
 ```
 
 ### Inject production
@@ -26,4 +26,14 @@ $ node inject react-lite prod -u
 ### Uninject development
 ```shell
 $ node inject react-lite dev -u
+```
+- - -
+### Inject `devtool` default as `cheap-module-source-map`
+```shell
+$ node inject devtool dev
+```
+
+### Inject `devtool` default as `eval`
+```shell
+$ node inject devtool dev eval
 ```
